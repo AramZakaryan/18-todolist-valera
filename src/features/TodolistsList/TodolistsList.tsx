@@ -5,10 +5,9 @@ import {
   addTodolistTC,
   todolistsActions,
   changeTodolistTitleTC,
-  fetchTodolistsTC,
   FilterValuesType,
   removeTodolistTC,
-  TodolistDomainType,
+  TodolistDomainType, fetchTodolistsTC
 } from "./todolists-reducer"
 import { addTaskTC, removeTaskTC, TasksStateType, updateTaskTC } from "./tasks-reducer"
 import { TaskStatuses } from "api/todolists-api"
