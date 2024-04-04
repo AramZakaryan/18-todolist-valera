@@ -75,7 +75,7 @@ export const tasksActions = slice.actions
 
 /** ZA: fetchTasks Thunk Creator
  */
-const fetchTasks = createAppAsyncThunk<
+const fetchTasks = createAsyncThunk<
   { tasks: TaskType[], todolistId: string },
   string
 >
