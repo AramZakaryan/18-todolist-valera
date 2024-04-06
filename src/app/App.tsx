@@ -4,7 +4,7 @@ import { TodolistsList } from "features/TodolistsList/TodolistsList"
 import { useSelector } from "react-redux"
 import { initializeAppTC } from "app/app.reducer"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { logoutTC } from "features/auth/auth.reducer"
+import { logoutTC } from "features/auth/model/auth.reducer"
 import {
   AppBar,
   Button,
@@ -17,7 +17,7 @@ import {
 } from "@mui/material"
 import { Menu } from "@mui/icons-material"
 import { useAppDispatch } from "common/hooks/useAppDispatch"
-import { selectIsLoggedIn } from "features/auth/auth.selectors"
+import { selectIsLoggedIn } from "features/auth/model/auth.selectors"
 import { selectAppStatus, selectIsInitialized } from "app/app.selectors"
 import { ErrorSnackbar } from "common/components"
 import { Login } from "features/auth/ui/Login"
